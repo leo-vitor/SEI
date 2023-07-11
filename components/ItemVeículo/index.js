@@ -17,7 +17,7 @@ export default function ItemVeiculo({ plate, name, id }) {
             })
             .catch(function (error) {
                 console.log(error.message)
-                alert("Erro ao excluir método de pagamento: ")
+                alert("Erro ao excluir veículo: ")
             });
     }
 

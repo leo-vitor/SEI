@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TextInput, Switch, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TextInput } from 'react-native';
 import SuccessButton from '../components/SuccesButton'
 import { useUserStore } from '../store';
 import Api from "../Api";
@@ -43,7 +43,7 @@ export default function AddVehicle({ navigation }) {
         console.log(vehicleDetails)
         
         salvarVeiculo(vehicleDetails);
-        navigation.navigate('Vehicles')
+        // navigation.navigate('Vehicles')
     }
     async function salvarVeiculo(vehicleDetails) {
         const response = await Api.post('/vehicles', {

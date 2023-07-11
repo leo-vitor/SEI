@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#121212',
+        backgroundColor: '#ffffff',
         gap: 10,
         top: 0,
     },
@@ -197,14 +197,14 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 48,
-        color: '#FFFFFF',
+        color: '#000000',
         textAlign: 'center',
         fontWeight: 'bold',
         marginVertical: 10
     },
     label:
     {
-        color: '#FFFFFF',
+        color: '#000000',
         textAlign: 'center',
         fontSize: 15,
         marginVertical: 10
@@ -216,8 +216,7 @@ const styles = StyleSheet.create({
         height: 40,
         width: '90%',
         fontSize: 18,
-        borderColor: '#FFFFFF',
+        borderColor: '#ffffff',
         backgroundColor: '#FFFFFF',
     },
-
 })

@@ -51,7 +51,7 @@ const CustomDrawer = (props)=> {
                         setHistory([])
                         setVehicles([])
                         setReserva({})
-                        navigation.navigate('Login');
+                        props.navigation.navigate('Login');
                     },
                 }
             ],
