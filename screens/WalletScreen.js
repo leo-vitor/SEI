@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     container: {
         paddingTop: 5, //evita ficar em cima da barra de notificações
         flex: 1,
-        backgroundColor: "#121212",
+        backgroundColor: "white",
         alignItems: "center",
     },
     textContainer: {
@@ -71,11 +71,11 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 17,
-        color: "white",
+        color: "black",
     },
     parkingButtom: {
         flexDirection: "row",
-        backgroundColor: "#bb86fc",
+        backgroundColor: "#3700b3",
         margin: 10,
         height: 60,
         width: "85%",
@@ -85,13 +85,13 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     buttonText: {
-        margin: 10,
+        margin: 5,
         fontSize: 17,
         color: "white",
     },
     ScrollViewContainer: {
         width: '85%',
-        height:'65%',
+        height:'70%',
         alignItems: "center",
         justifyContent: "center",
     },

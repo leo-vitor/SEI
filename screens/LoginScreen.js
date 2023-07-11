@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TextInput, Switch, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TextInput, Switch, TouchableOpacity,Image } from 'react-native';
 import SuccessButton from '../components/SuccesButton'
 import { useUserStore } from '../store';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -106,8 +106,11 @@ export default function LoginScreen({ navigation }) {
 
     return (
         <View style={styles.container}>
+            
+            <Image source={require('../assets/SEI-icon-2.png')} style={styles.headerLogo} />
+           
             <View style={styles.textContainer}>
-                <Text style={styles.text}>Seja bem-vindo(a) de volta!</Text>
+                <Text style={styles.text}>Faça login na sua conta</Text>
             </View>
 
             <TextInput style={styles.input}
@@ -153,20 +156,27 @@ const styles = StyleSheet.create({
         width: '100%',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#121212',
+        backgroundColor: 'white',
         gap: 10
     },
     textContainer: {
         justifyContent: 'center',
         alignItems: 'center',
         width: '90%',
+        margin:10
     },
     text: {
         // fontFamily: 'Cochin', //Depois ver se é realmente necessário usar fontes diferentes, pq tem q importar.
         fontSize: 48,
-        color: '#FFFFFF',
+        color: 'black',
         textAlign: 'center',
         fontWeight: 'bold',
+    },
+    headerLogo: {
+        width:100,
+        height: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     input: {
         borderWidth: 1,
@@ -175,7 +185,7 @@ const styles = StyleSheet.create({
         height: 40,
         width: '90%',
         fontSize: 18,
-        borderColor: '#FFFFFF',
+        borderColor: 'black',
         backgroundColor: '#FFFFFF',
     },
     switchContainer: {
@@ -184,7 +194,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     switchText: {
-        color: '#FFFFFF',
+        color: 'black',
         fontSize: 18,
     },
 
@@ -196,7 +206,7 @@ const styles = StyleSheet.create({
     },
     bottomLineLabel:
     {
-        color: '#FFFFFF',
+        color: 'black',
         fontSize: 14,
     },
     bottomLineBold: {

@@ -90,10 +90,10 @@ function HomeScreen({ navigation }) {
             <Header navigation={navigation} />
 
             <View style={styles.textContainer}>
-                <Text style={styles.text}>Escolha um estacionamento:</Text>
+                <Text style={styles.text}>Reserve sua vaga para garantir seu lugar!</Text>
             </View>
             <TouchableOpacity style={styles.parkingButtom} onPress={handleClick}>
-                <Text style={styles.buttomText}>Veja a lista de estacionamentos </Text>
+                <Text style={styles.buttomText}>Reserve uma vaga </Text>
                 <AntDesign name="right" size={24} color="white" />
             </TouchableOpacity>
 
@@ -107,9 +107,9 @@ function HomeScreen({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 5,
+        paddingTop: 5, //evita ficar em cima da barra de notificações
         flex: 1,
-        backgroundColor: "#121212",
+        backgroundColor: "white",
         alignContent: "center",
         alignItems: "center",
     },
@@ -120,18 +120,18 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 17,
-        color: "white",
+        color: "black",
     },
     parkingButtom: {
         flexDirection: "row",
-        backgroundColor: "#bb86fc",
+        backgroundColor: "#3700b3",
         margin: 10,
         height: 60,
         width: "85%",
         alignItems: "center",
         justifyContent: "space-between",
         borderRadius: 10,
-        padding: 10,
+        padding: 5,
     },
     buttomText: {
         margin: 10,

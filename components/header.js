@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text, StyleSheet, Alert, useState, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, Alert, TouchableOpacity,Image } from "react-native";
 import { Entypo, AntDesign } from "@expo/vector-icons";
 import { useUserStore } from "../store";
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -72,21 +72,25 @@ function Header({ navigation }) {
             return
         }
     }
+    function SEIbuttom() {
+        return (
+          <TouchableOpacity onPress={() => {navigation.openDrawer()}}>
+            <View style={styles.headerLeft}>
+                <Entypo name="menu" size={30} color="black" />
+            </View>
+          </TouchableOpacity>
+        );
+      }
 
     return (
         <View style={styles.header}>
-            <View style={styles.headerLeft}>
-                <View style={[{ transform: [{ rotate: '180deg' }], justifyContent: 'flex-start' }]}>
-                    <Entypo name="log-out" size={30} color="white" onPress={() => showAlert()} />
-                </View>
-                <Text style={styles.headerText}> SEI </Text>
-            </View>
+            <SEIbuttom/>
             <View style={styles.headerRight}>
-                <Text style={{ marginEnd: 10, color: "white" }}> Reservar Vaga</Text>
-                <TouchableOpacity style={styles.bookButtom} onPress={() => handleClick()}>
-                    <AntDesign name="plus" size={18} color="white" />
-                </TouchableOpacity>
+                <Image source={require('../assets/SEI-icon-2.png')} style={styles.headerLogo} />    
             </View>
+            {/* <View style={[{ transform: [{ rotate: '180deg' }], justifyContent: 'flex-start' }]}>
+                <Entypo name="log-out" size={25} color="black" onPress={() => showAlert()} />
+            </View> */}
         </View>
     );
 }
@@ -94,19 +98,20 @@ function Header({ navigation }) {
 const styles = StyleSheet.create({
     header: {
         flexDirection: "row",
-        top: 0,
+        top: 10,
         height: 90,
-        backgroundColor: "#121212",
+        backgroundColor: "white",
         alignContent: "space-between",
         alignItems: "center",
         justifyContent: "space-between",
         padding: 20,
         width: '100%',
     },
-    headerText: {
-        fontFamily: "monospace",
-        fontSize: 32,
-        color: "white",
+    headerLogo: {
+        width: 85,
+        height: 40,
+        margin: 10,
+        left: -10,
     },
     headerLeft: {
         flexDirection: "row",

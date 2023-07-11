@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     container: {
         paddingTop: 5, //evita ficar em cima da barra de notificações
         flex: 1,
-        backgroundColor: "#121212",
+        backgroundColor: "white",
         alignContent: "center",
         alignItems: "center",
     },
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 17,
-        color: "white",
+        color: "black",
     },
     parkingButtom: {
         flexDirection: "row",
@@ -83,12 +83,12 @@ const styles = StyleSheet.create({
     },
     ScrollViewContainer: {
         width: '85%',
-        height: '80%',
+        height:'70%',
         alignItems: "center",
         justifyContent: "center",
     },
     scrollView: {
         width: '100%',
-        height: '100%',
+        height:'100%',
     },
 });

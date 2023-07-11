@@ -84,9 +84,9 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 100,
         alignItems: 'flex-start',
-        borderColor: '#FFFFFF',
-        borderWidth: 2,
-        borderRadius: 10,
+        borderColor: 'black',
+        borderTopWidth: 2,
+        borderBottomWidth: 2,
         padding: 12,
     },
     linha1: {
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
         width: '100%',
     },
     info: {
-        color: '#FFFFFF',
+        color: 'black',
         // backgroundColor: 'gray',
         fontSize: 20
     },

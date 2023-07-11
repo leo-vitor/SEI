@@ -1,38 +1,14 @@
 import React from 'react';
-
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import DrawerRouter from './screens/DrawerRouter';
+import 'react-native-gesture-handler';
 
-// Importe seus componentes de tela para as tabs
-import TabRouter from './screens/TabRouter';
-import CreateAccountScreen from './screens/CreateAccountScreen';
-import RecoverScreen from './screens/RecoverScreen';
-import LoginScreen from './screens/LoginScreen';
-import AddPaymentMethod from './screens/AddPaymentMethod';
-import AddVehicle from './screens/AddVehicle';
-import BookVacancy from './screens/BookingScreen';
-
-const Stack = createNativeStackNavigator();
-
-function App() {
-
-    return (
-        <NavigationContainer>
-            <Stack.Navigator screenOptions={{
-                headerStyle: { backgroundColor: '#121212' },
-                headerTintColor: '#FFFFFF',
-                headerTitleStyle: { fontWeight: 'bold' }
-            }}>
-                <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
-                <Stack.Screen name="CriarConta" component={CreateAccountScreen} options={{ title: "Criar conta" }} />
-                <Stack.Screen name="RecuperarConta" component={RecoverScreen} options={{ title: "Recuperar conta" }} />
-                <Stack.Screen name="Router" component={TabRouter} options={{ headerShown: false }} />
-                <Stack.Screen name="AddPaymentMethod" component={AddPaymentMethod} options={{ title: "Adicionar método de pagamento" }} />
-                <Stack.Screen name="AddVehicle" component={AddVehicle} options={{ title: "Adicionar veículo" }} />
-                <Stack.Screen name="BookVacancy" component={BookVacancy} options={{ title: "Fazer reserva" }} />
-            </Stack.Navigator>
-        </NavigationContainer>
-    );
+const App = () => {
+  return (
+    <NavigationContainer>
+      <DrawerRouter />
+    </NavigationContainer>
+  );
 }
 
 export default App;

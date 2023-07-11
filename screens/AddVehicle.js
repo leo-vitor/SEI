@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#121212',
+        backgroundColor: 'white',
         alignContent: "center",
         gap: 10,
         top: 0,
@@ -105,16 +105,16 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 48,
-        color: '#FFFFFF',
+        color: 'black',
         textAlign: 'center',
         fontWeight: 'bold',
         marginVertical: 10
     },
     label:
     {
-        color: '#FFFFFF',
+        color: 'black',
         textAlign: 'center',
-        fontSize: 15,
+        fontSize: 14,
         marginVertical: 10
     },
     input: {
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
         height: 40,
         width: '90%',
         fontSize: 18,
-        borderColor: '#FFFFFF',
+        borderColor: 'black',
         backgroundColor: '#FFFFFF',
         top: -100,
     },

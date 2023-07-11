@@ -11,7 +11,7 @@ export default function SuccessButton({ label, navegarPara }) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#1FD1A4',
+        backgroundColor: '#3800b3',
         height: 40,
         width: '90%',
         borderRadius: 5,

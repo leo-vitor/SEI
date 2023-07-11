@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     container: {
         paddingTop: 5, //evita ficar em cima da barra de notificações
         flex: 1,
-        backgroundColor: "#121212",
+        backgroundColor: "white",
         alignContent: "center",
         alignItems: "center",
     },
@@ -70,11 +70,11 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 17,
-        color: "white",
+        color: "black",
     },
     newVehicleButtom: {
         flexDirection: "row",
-        backgroundColor: "#bb86fc",
+        backgroundColor: "#3700b3",
         margin: 10,
         height: 60,
         width: "85%",
